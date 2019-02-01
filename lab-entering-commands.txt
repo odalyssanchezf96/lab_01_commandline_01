@@ -17,14 +17,14 @@ $ ls<ENTER>
 
 Copy and paste the output of ls below.
 ----------
-AMALogger20190109.log	Downloads		QLData
-AMALogger20190128.log	Library			Things
+ AMALogger20190109.log	Documents		Public
+AMALogger20190128.log	Downloads		QLData
+AMALogger20190130.log	Library			Things
 Adlm			MPLABXProjects		ipe.properties
 Adobe			Movies			isus
-Applications		Music			pymel.log
-Daniel-MTEC1003		New Unity Project	xgen
-Desktop			Pictures
-Documents		Public
+Applications		Music			pizza
+Daniel-MTEC1003		New Unity Project	pymel.log
+Desktop			Pictures		xgen
 
 ==========
 2a. Type: 
@@ -33,6 +33,7 @@ $ ls D<TAB>
 
 What happens?  Describe it below.
 ----------
+Nothing happened weird.
 
 
 
