@@ -31,6 +31,8 @@ If it doesn't start at #1 again, or ask for help before moving on!
 
 Copy and paste the output of pwd below.
 ----------
+Odalyss-MBP:mtec1002 odalyssanchez$ pwd
+/Users/odalyssanchez/mtec1002
 
 
 
@@ -42,6 +44,9 @@ $ ls
 
 Copy and paste the output below.
 ----------
+Odalyss-MBP:mtec1002 odalyssanchez$ mkdir animals
+Odalyss-MBP:mtec1002 odalyssanchez$ ls
+animals
 
 
 
@@ -53,6 +58,9 @@ $ ls
 
 Copy and paste the output below.
 ----------
+Odalyss-MBP:mtec1002 odalyssanchez$ mkdir food
+Odalyss-MBP:mtec1002 odalyssanchez$ ls
+animals	food
 
 
 
@@ -64,6 +72,9 @@ $ ls
 
 Copy and paste the output below.
 ----------
+Odalyss-MBP:mtec1002 odalyssanchez$ mkdir -p foo/bar/baz/qux
+Odalyss-MBP:mtec1002 odalyssanchez$ ls
+animals	foo	food
 
 
 
@@ -75,6 +86,9 @@ $ pwd
 
 Copy and paste the output below.
 ----------
+Odalyss-MBP:mtec1002 odalyssanchez$ cd foo/bar/baz/qux
+Odalyss-MBP:qux odalyssanchez$ pwd
+/Users/odalyssanchez/mtec1002/foo/bar/baz/qux
 
 
 
@@ -86,6 +100,9 @@ $ pwd
 
 Copy and paste the output below.
 ----------
+Odalyss-MBP:qux odalyssanchez$ cd ../..
+Odalyss-MBP:bar odalyssanchez$ pwd
+/Users/odalyssanchez/mtec1002/foo/bar
 
 
 
@@ -97,6 +114,10 @@ $ pwd
 
 Copy and paste the output below.
 ----------
+Odalyss-MBP:bar odalyssanchez$ cd -
+/Users/odalyssanchez/mtec1002/foo/bar/baz/qux
+Odalyss-MBP:qux odalyssanchez$ pwd
+/Users/odalyssanchez/mtec1002/foo/bar/baz/qux
 
 
  
@@ -108,6 +129,9 @@ $ pwd
 
 Copy and paste the output below.
 ----------
+Odalyss-MBP:qux odalyssanchez$ cd ../../../..
+Odalyss-MBP:mtec1002 odalyssanchez$ pwd
+/Users/odalyssanchez/mtec1002
 
 
 
@@ -120,6 +144,10 @@ $ ls -l
 
 Copy and paste the first two lines from the output into the space below.
 ----------
+	Odalyss-MBP:mtec1002 odalyssanchez$ ls -l
+total 0
+drwxr-xr-x  3 odalyssanchez  staff  102 Feb  4 21:46 foo
+drwxr-xr-x  2 odalyssanchez  staff   68 Feb  4 21:45 food
 
 
 
@@ -131,6 +159,9 @@ $ pwd
 
 Copy and paste the output into the space below.
 ----------
+Odalyss-MBP:mtec1002 odalyssanchez$ cd ~
+Odalyss-MBP:~ odalyssanchez$ pwd
+/Users/odalyssanchez
 
 
 
@@ -142,6 +173,9 @@ $ pwd
 
 Copy and paste the output into the space below.
 ----------
+Odalyss-MBP:~ odalyssanchez$ cd /volumes
+Odalyss-MBP:volumes odalyssanchez$ pwd
+/volumes
 
 
 
@@ -153,6 +187,10 @@ $ pwd
 
 Copy and paste the output into the space below.
 ----------
+Odalyss-MBP:volumes odalyssanchez$ cd /unknown folder
+-bash: cd: /unknown: No such file or directory
+Odalyss-MBP:volumes odalyssanchez$ pwd
+/volumes
 
 
 
@@ -164,6 +202,9 @@ $ pwd
 
 Copy and paste the output into the space below.
 ----------
+Odalyss-MBP:volumes odalyssanchez$ cd ~/mtec1002
+Odalyss-MBP:mtec1002 odalyssanchez$ pwd
+/Users/odalyssanchez/mtec1002
 
 
 
@@ -174,13 +215,15 @@ $ hostname
 
 Copy and paste the output into the space below.
 ----------
+Odalyss-MBP:mtec1002 odalyssanchez$ hostname
+Odalyss-MBP.home
 
 
 
 ==========
 17a. Make sure you're back in your mtec1002, which should be in your home folder.  What command would you use to find out if you're in the right folder?  Write the command below, then run it.
 ----------
-
+pwd
 
 
 ==========
@@ -203,7 +246,7 @@ lemon
 
 Use only one command to make all of these new directories.  Write what command you used below:
 ----------
-
+mkdir pineapple/orange/strawberry/lemon
 
 
 ==========
@@ -211,7 +254,7 @@ Use only one command to make all of these new directories.  Write what command y
 
 Write the command you used to create the directory below:
 ----------
-
+mkdir aardvark
 
 
 ==========
@@ -219,7 +262,7 @@ Write the command you used to create the directory below:
 
 What is the modified date of the aardvark directory?
 ----------
-
+drwxr-xr-x  2 odalyssanchez  staff   68 Feb  4 22:18 aardvark
 
 
 ==========
@@ -231,7 +274,7 @@ What is the modified date of the aardvark directory?
 
 What command did you use?
 ----------
-
+mkdir foo/bar/baz
 
 
 ==========
@@ -239,7 +282,7 @@ What command did you use?
 
 What command did you use?
 ----------
-
+cd baz
 
 
 ==========
@@ -247,44 +290,45 @@ What command did you use?
 
 What command did you use?
 ----------
-
+cd ../..
 
 ==========
 24. What command is used to delete empty directories?
 ----------
-
+rmdir
 
 
 ==========
 25. What command is used to print out your current working directory?
 ----------
-
+pwd
 
 
 ==========
 26. What flag do I pass to ls to print out all files?
 ----------
-
+-a
 
 
 ==========
 27. What's the shortcut for home directory?
 ----------
-
+~
 
 
 ==========
 28. What's a pathname?
 ----------
-
+it tells you the form of a file
 
 
 ==========
 29. What's a directory?
 ----------
-
+A cataloging structure
 
 
 ==========
 30. What's the *absolute* path (full path, starting at root) to your user's Downloads directory?
 ----------
+pushd downloads
